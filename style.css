@@ -42,7 +42,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  min-width: 1080px;
+  max-width: 1080px; }
 
 body {
   margin: 0; }
@@ -229,8 +231,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #ffffff;
+  font-family: "Exo Web", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -292,7 +294,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -310,7 +312,7 @@ ul, ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -407,11 +409,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: white; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -483,6 +485,44 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.site-footer {
+  margin-top: 50px;
+  width: 100%;
+  font-size: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .site-footer .site-info a {
+      text-decoration: none; }
+    .site-footer .site-info .footer-navigation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .site-footer .site-info .footer-navigation ul li {
+        margin: 5px;
+        border-right: 1px solid white;
+        padding-right: 8px; }
+    .site-footer .site-info p {
+      margin: 5px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -587,5 +627,17 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*Front-Page*/
 /* All Archives Page */
 /* Submit a Quote Page */

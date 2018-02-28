@@ -6,7 +6,6 @@
 
 a {
 	color: $color__link;
-
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -31,13 +30,11 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
-
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -45,57 +42,46 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
-
 			ul {
 				left: -999rem;
 				top: 0;
 			}
-
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
 	li {
 		float: left;
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		&:hover>a,
+		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -113,20 +99,47 @@ a {
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+.site-footer {
+	margin-top: 50px;
+	width: 100%;
+	font-size: .8rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	.site-info {
+		display: flex;
+		flex-direction: row;
+		a{
+			text-decoration: none;
+		}
+		.footer-navigation {
+			ul {
+				display: flex;
+				flex-direction: row;
+				li {
+					margin: 5px;
+					border-right: 1px solid white;
+					padding-right: 8px;
+				}
+			}
+		}
+		p{
+			margin: 5px;
+		}
 	}
 }
