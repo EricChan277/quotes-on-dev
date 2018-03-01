@@ -42,9 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  min-width: 1080px;
-  max-width: 1080px; }
+  -ms-text-size-adjust: 100%; }
 
 body {
   margin: 0; }
@@ -358,7 +356,8 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #00cc00; }
+    border-color: #006600;
+    color: #006600; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -406,7 +405,7 @@ a {
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: white; }
+    color: #006600; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -491,7 +490,8 @@ a {
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-right: 10%; }
   .site-footer .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -632,10 +632,23 @@ body {
           justify-content: center;
   max-width: 100vw; }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*Front-Page*/
 .home .post .entry-content {
   font-size: 1.5rem;
   padding: 0px 20%; }
+  .home .post .entry-content p {
+    margin-bottom: 0px; }
 
 .home .post .entry-meta {
   font-weight: none;
@@ -654,8 +667,9 @@ body {
           align-items: center; }
   .home .post .entry-meta .entry-title {
     font-size: 1rem;
-    font-weight: normal;
-    margin-right: 1.5em; }
+    font-weight: normal; }
+    .home .post .entry-meta .entry-title span {
+      margin-left: 10px; }
 
 .home .btn-container {
   display: -webkit-box;

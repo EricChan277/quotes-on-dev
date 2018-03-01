@@ -18,7 +18,8 @@ input[type="submit"] {
 	padding: .6rem 1rem .4rem;
 
 	&:hover {
-		border-color: #00cc00;
+		border-color:darken( #00cc00,20%) ;
+		color:darken( #00cc00,20%) ;
 		
 	}
 
