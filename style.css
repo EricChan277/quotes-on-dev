@@ -720,8 +720,8 @@ body {
     .home .post .entry-meta .entry-title {
       font-size: 1rem;
       font-weight: normal; }
-      .home .post .entry-meta .entry-title span {
-        margin-left: 10px; }
+    .home .post .entry-meta .source {
+      margin-left: 10px; }
 
 .home .btn-container {
   display: -webkit-box;
