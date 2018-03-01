@@ -365,7 +365,8 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #00cc00; }
+    border-color: #006600;
+    color: #006600; }
 
 /* Fields */
 input[type="text"],
@@ -644,32 +645,63 @@ body {
           justify-content: center; }
 
 /*Front-Page*/
-.home .post .entry-content {
-  font-size: 1.5rem;
-  padding: 0px 20%; }
-  .home .post .entry-content p {
-    margin-bottom: 0px; }
-
-.home .post .entry-meta {
-  font-weight: none;
+.home .post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .home .post .entry-meta .entry-title {
-    font-size: 1rem;
-    font-weight: normal; }
-    .home .post .entry-meta .entry-title span {
-      margin-left: 10px; }
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .home .post .entry-content {
+    font-size: 1.5rem;
+    padding: 0px 20%; }
+    .home .post .entry-content p {
+      margin-bottom: 0px;
+      position: relative; }
+    .home .post .entry-content :before {
+      color: #00cc00;
+      content: "\f10d";
+      font-family: FontAwesome;
+      left: -175px;
+      position: absolute;
+      top: 0;
+      font-size: 125px; }
+    .home .post .entry-content :after {
+      color: #00cc00;
+      content: "\f10e";
+      font-family: FontAwesome;
+      right: -130px;
+      position: absolute;
+      top: 0;
+      font-size: 125px; }
+  .home .post .entry-meta {
+    font-weight: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home .post .entry-meta .entry-title {
+      font-size: 1rem;
+      font-weight: normal; }
+      .home .post .entry-meta .entry-title span {
+        margin-left: 10px; }
 
 .home .btn-container {
   display: -webkit-box;

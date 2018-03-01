@@ -25,7 +25,8 @@ input[type="submit"] {
 
 	&:active,
 	&:focus {
-		border-color: #00cc00;
+		border-color:darken( #00cc00,20%) ;
+		color:darken( #00cc00,20%) ;
 		}
 }
 

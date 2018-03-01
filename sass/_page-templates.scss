@@ -19,23 +19,47 @@ body {
 
 .home {
   .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .entry-content {
       font-size: 1.5rem;
       padding: 0px 20%;
       p {
         margin-bottom: 0px;
+        position: relative;
+      }
+      :before {
+        color: #00cc00;
+        content: "\f10d";
+        font-family: FontAwesome;
+        left: -175px;
+        position: absolute;
+        top: 0;
+        font-size: 125px;
+      }
+      :after {
+        color: #00cc00;
+        content: "\f10e";
+        font-family: FontAwesome;
+        right: -130px;
+        position: absolute;
+        top: 0;
+        font-size: 125px;
       }
     }
     .entry-meta {
       font-weight: none;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
+      width: 50%;
       align-items: center;
       .entry-title {
         font-size: 1rem;
         font-weight: normal;
-        span{
+        span {
           margin-left: 10px;
         }
       }
