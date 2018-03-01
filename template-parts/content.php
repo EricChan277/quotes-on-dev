@@ -48,5 +48,7 @@
 
 
 <?php if ( is_home() || is_single() ): ?>
-	<button type="button" id="new-quote-button">Anotha one!</button>
+    <div class="btn-container">
+        <button type="button" id="new-quote-button">Anotha one!</button>
+    </div>
 <?php endif; ?>

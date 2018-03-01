@@ -23,7 +23,7 @@
 					?>
 
 
-				<p><a href="https://github.com/EricChan277/quotes-on-dev">Brought to you by &copy; Eric Chan <?php echo date( 'Y' );?></a></p>
+				<p>Brought to you by &copy;<a href="https://github.com/EricChan277/quotes-on-dev"> Eric Chan <?php echo date( 'Y' );?></a></p>
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

@@ -5,12 +5,17 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100vw;
 }
 
 /*Front-Page*/
 
-.page-template-default {
-
+.home {
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* All Archives Page */
