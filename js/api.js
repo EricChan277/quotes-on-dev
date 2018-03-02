@@ -19,7 +19,7 @@
 
       $.ajax({
         method: 'get',
-        url: restUrl + restNameSpace + 'posts',
+        url: restUrl + restNameSpace + 'posts?filter[orderby]=rand&filter[posts_per_page]=1',
       }).done(function(data){
               console.log('something');
               console.log(data);

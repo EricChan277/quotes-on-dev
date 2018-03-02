@@ -58,24 +58,6 @@ body {
         margin-bottom: 0px;
         position: relative;
       }
-      :before {
-        color: #00cc00;
-        content: "\f10d";
-        font-family: FontAwesome;
-        left: -175px;
-        position: absolute;
-        top: 0;
-        font-size: 125px;
-      }
-      :after {
-        color: #00cc00;
-        content: "\f10e";
-        font-family: FontAwesome;
-        right: -130px;
-        position: absolute;
-        top: 0;
-        font-size: 125px;
-      }
     }
     .entry-meta {
       font-weight: none;
