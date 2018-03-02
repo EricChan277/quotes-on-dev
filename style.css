@@ -667,6 +667,25 @@ body {
   .logo-wrapper .logo {
     width: 700px; }
 
+.site-content {
+  position: relative; }
+  .site-content:before {
+    color: #00cc00;
+    content: "\f10d";
+    font-family: FontAwesome;
+    left: -175px;
+    position: absolute;
+    top: 0;
+    font-size: 125px; }
+  .site-content:after {
+    color: #00cc00;
+    content: "\f10e";
+    font-family: FontAwesome;
+    right: -130px;
+    position: absolute;
+    top: 0;
+    font-size: 125px; }
+
 /*Front-Page*/
 .home .post {
   display: -webkit-box;
@@ -796,23 +815,6 @@ body {
     position: relative; }
     .page .entry-header .entry-title {
       margin-bottom: 0px; }
-    @media screen and (min-width: 1080px) {
-      .page .entry-header :before {
-        color: #00cc00;
-        content: "\f10d";
-        font-family: FontAwesome;
-        left: -175px;
-        position: absolute;
-        top: 0;
-        font-size: 125px; }
-      .page .entry-header :after {
-        color: #00cc00;
-        content: "\f10e";
-        font-family: FontAwesome;
-        right: -130px;
-        position: absolute;
-        top: 0;
-        font-size: 125px; } }
-  .page .entry-content {
-    margin: 0px;
-    width: 55%; }
+    .page .entry-header .entry-content {
+      margin: 0px;
+      width: 55%; }

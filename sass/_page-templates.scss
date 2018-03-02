@@ -21,7 +21,7 @@ body {
 
 .site-content {
   position: relative;
-  :before {
+  &:before {
     color: #00cc00;
     content: "\f10d";
     font-family: FontAwesome;
@@ -30,7 +30,7 @@ body {
     top: 0;
     font-size: 125px;
   }
-  :after {
+  &:after {
     color: #00cc00;
     content: "\f10e";
     font-family: FontAwesome;
@@ -41,7 +41,7 @@ body {
   }
 }
 
-}
+
 
 /*Front-Page*/
 
@@ -126,12 +126,17 @@ body {
 
 /* Submit a Quote Page */
 
-.page-id-111 {
-  .quotes-submit-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-}
+// .page-id-111 {
+//   .quotes-submit-wrapper {
+//     .quote-submission-form {
+//       display: flex;
+//       div{
+//         display: flex;
+//         flex-direction: column;
+//       }
+//     }
+//   }
+// }
 
 /* About Page */
 
