@@ -654,6 +654,51 @@ body {
   max-width: 100vw; }
 
 .logo-wrapper {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px; }
+  @media (min-width: 1080px) {
+    .logo-wrapper {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 5%; }
+      .logo-wrapper .logo {
+        width: 700px; } }
+
+.hfeed {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .hfeed .site-content {
+    position: relative;
+    width: 50%; }
+    @media (min-width: 1080px) {
+      .hfeed .site-content:before {
+        color: #00cc00;
+        content: "\f10d";
+        font-family: FontAwesome;
+        left: -175px;
+        position: absolute;
+        top: 0;
+        font-size: 125px; }
+      .hfeed .site-content:after {
+        color: #00cc00;
+        content: "\f10e";
+        font-family: FontAwesome;
+        right: -130px;
+        position: absolute;
+        top: 0;
+        font-size: 125px; } }
+
+/*Front-Page*/
+.home .hfeed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,30 +708,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5%; }
-  .logo-wrapper .logo {
-    width: 700px; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
-.site-content {
-  position: relative; }
-  .site-content:before {
-    color: #00cc00;
-    content: "\f10d";
-    font-family: FontAwesome;
-    left: -175px;
-    position: absolute;
-    top: 0;
-    font-size: 125px; }
-  .site-content:after {
-    color: #00cc00;
-    content: "\f10e";
-    font-family: FontAwesome;
-    right: -130px;
-    position: absolute;
-    top: 0;
-    font-size: 125px; }
-
-/*Front-Page*/
 .home .post {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,64 +767,54 @@ body {
           justify-content: center; }
 
 /* All Archives Page */
-.page-id-113 .entry-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+.page-id-113 .site-content {
+  width: 100%;
+  padding-left: 15px; }
 
-.page-id-113 .post-archives {
+.page-id-113 .entry-header {
+  margin-bottom: 50px; }
+
+.page-id-113 .quote-authors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  width: 90%; }
+  .page-id-113 .quote-authors li {
+    margin: 5px 10px; }
+    .page-id-113 .quote-authors li a {
+      text-decoration: none;
+      font-weight: lighter; }
+
+.page-id-113 .catagory-archives {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-  .page-id-113 .post-archives .quote-authors {
+          flex-direction: column;
+  width: 90%; }
+  .page-id-113 .catagory-archives ul {
+    margin: 0px;
+    padding: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 45%; }
-    .page-id-113 .post-archives .quote-authors li {
-      margin: 0px 10px; }
+        flex-wrap: wrap; }
+    .page-id-113 .catagory-archives ul li {
+      margin: 5px 10px; }
+      .page-id-113 .catagory-archives ul li a {
+        text-decoration: none;
+        font-weight: lighter; }
 
 /* Submit a Quote Page */
 /* About Page */
-.page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .page .entry-header {
-    margin-bottom: 0px;
-    width: 55%;
-    position: relative; }
-    .page .entry-header .entry-title {
-      margin-bottom: 0px; }
-    .page .entry-header .entry-content {
-      margin: 0px;
-      width: 55%; }

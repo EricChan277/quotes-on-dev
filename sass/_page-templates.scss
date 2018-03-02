@@ -10,42 +10,58 @@ body {
 }
 
 .logo-wrapper {
+  margin-top: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5%;
-  .logo {
-    width: 700px;
+  padding-left: 15px; // width: 50%;
+  // height: auto;
+  @media (min-width: 620px) {}
+  @media (min-width:1080px) {
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    .logo {
+      width: 700px;
+    }
   }
 }
 
-.site-content {
-  position: relative;
-  &:before {
-    color: #00cc00;
-    content: "\f10d";
-    font-family: FontAwesome;
-    left: -175px;
-    position: absolute;
-    top: 0;
-    font-size: 125px;
-  }
-  &:after {
-    color: #00cc00;
-    content: "\f10e";
-    font-family: FontAwesome;
-    right: -130px;
-    position: absolute;
-    top: 0;
-    font-size: 125px;
+.hfeed {
+  flex-direction: column;
+  .site-content {
+    position: relative;
+    width: 50%;
+    @media (min-width: 1080px) {
+      &:before {
+        color: #00cc00;
+        content: "\f10d";
+        font-family: FontAwesome;
+        left: -175px;
+        position: absolute;
+        top: 0;
+        font-size: 125px;
+      }
+      &:after {
+        color: #00cc00;
+        content: "\f10e";
+        font-family: FontAwesome;
+        right: -130px;
+        position: absolute;
+        top: 0;
+        font-size: 125px;
+      }
+    }
   }
 }
-
-
 
 /*Front-Page*/
 
 .home {
+  .hfeed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .post {
     display: flex;
     flex-direction: column;
@@ -85,22 +101,43 @@ body {
 /* All Archives Page */
 
 .page-id-113 {
-  .entry-header {
-    display: flex;
-    justify-content: center;
+  .site-content {
+    width: 100%;
+    padding-left: 15px;
   }
-  .post-archives {
+  .entry-header {
+    margin-bottom: 50px;
+  }
+  .quote-authors {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    width: 90%;
+    li {
+      margin: 5px 10px;
+      a {
+        text-decoration: none;
+        font-weight: lighter;
+      }
+    }
+  }
+  .catagory-archives {
+    display: flex;
     flex-direction: column;
-    .quote-authors {
+    width: 90%;
+    ul {
+      margin: 0px;
+      padding: 0px;
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-      width: 45%;
       li {
-        margin: 0px 10px;
+        margin: 5px 10px;
+        a {
+          text-decoration: none;
+          font-weight: lighter;
+        }
       }
     }
   }
@@ -119,25 +156,22 @@ body {
 //     }
 //   }
 // }
-
 /* About Page */
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  .entry-header {
-    margin-bottom: 0px;
-    width: 55%;
-    position: relative;
-    .entry-title {
-      margin-bottom: 0px
-    } //   @media screen and (min-width: 1080px){
-    // }
-    .entry-content {
-      margin: 0px;
-      width: 55%;
-    }
-  }
-}
+// .page {
+//   display: flex;
+//   flex-direction: column;
+//   .entry-header {
+//     margin-bottom: 0px;
+//     width: 55%;
+//     position: relative;
+//     .entry-title {
+//       margin-bottom: 0px
+//     } //   @media screen and (min-width: 1080px){
+//     // }
+//     .entry-content {
+//       margin: 0px;
+//       width: 55%;
+//     }
+//   }
+// }
