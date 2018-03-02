@@ -7,17 +7,25 @@
   //history api mdn HISTORYpushstate
   
   //submit a new quote with the form using jquery 
+
+  var restUrl = api_vars.root_url;
+  var restNameSpace = 'wp/v2/';
+
+  console.log(restUrl + restNameSpace);
   
-  $( '#new-quote-button' ).on( 'click', function ( s ) {
-      s.preventDefault();
+  $( '#new-quote-button' ).on( 'click', function ( event ) {
+      event.preventDefault();
+      console.log('Hi');
+
       $.ajax({
-        url: '/wdft-2018/quotes-on-dev/wordpress/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
-            success: function ( data ) {
-  
-  
-              var content = data[0].content.rendered;
+        method: 'get',
+        url: restUrl + restNameSpace + 'posts',
+      }).done(function(data){
+              console.log('something');
+              console.log(data);
+              // var content = data[0].content.rendered;
               var quoteUrl = data[0]._qod_quote_source_url;
-              var template = '';
+              // var template = '';
   
               if(quoteUrl > 0){
                 template += '<div class="entry-content"></div>';
@@ -39,13 +47,19 @@
               $(".source").empty();
               $(".source").append("," + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
   
-      }});
+ 
   
-    } );
+    }).fail(function(){
+      console.log('nope');
+     });// end of .done and .ajax
+
+  });//  end of click
   
   
     // submit a new quote from the form, e.g. button .on click form .submit
-    // post request wp-json/wp/v2/posts
+
+
+
     // before send nonce authentication, it's in the slides from wp ajax lesson
   
   

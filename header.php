@@ -24,7 +24,7 @@
 			
 			<div class="site-branding">
 					
-					<div class="logo">
+					<div class="logo-wrapper">
 						<h1 class="site-title screen-reader-text">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
