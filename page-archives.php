@@ -43,7 +43,7 @@ get_header(); ?>
 
         <div>
          <h2>Tags</h2>
-          <ul>
+          <!-- <ul> -->
             <?php wp_tag_cloud(
               array(
                 'smallest' => 1,
@@ -52,7 +52,7 @@ get_header(); ?>
                 'format' => 'list',
               )
             ); ?>
-          </ul>
+          <!-- </ul> -->
         </div>
 
 		</main><!-- #main -->
