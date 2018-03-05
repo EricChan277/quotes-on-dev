@@ -398,14 +398,25 @@ textarea {
   color: #666;
   border: 1px solid #00cc00;
   border-radius: 3px;
-  background-color: #222222; }
+  background-color: #222222;
+  margin-bottom: 15px;
+  width: 30%; }
+  @media (min-width: 620px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+      width: 50%; } }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #111;
+    background-color: #FFFFFF; }
 
 input[type="text"],
 input[type="email"],
@@ -416,7 +427,10 @@ input[type="search"] {
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 50%; }
+  @media (min-width: 620px) {
+    textarea {
+      width: 80%; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -798,3 +812,6 @@ object {
     font-size: 1.25rem; }
     .wp-tag-cloud li a {
       text-decoration: none; }
+
+.quotes-submit-wrapper a {
+  text-decoration: none; }
