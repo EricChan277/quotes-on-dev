@@ -22,12 +22,9 @@
 }
 
 .site-content {
-  
   position: relative;
   font-weight: lighter;
-  @media (min-width: 620px) {
-
-  }
+  @media (min-width: 620px) {}
   @media (min-width: 1080px) {
     margin: 4.5rem 175px 1.5rem;
     &:before {
@@ -91,6 +88,7 @@
     flex-direction: column;
   }
 }
+
 .quotes-submit-wrapper {
   a {
     text-decoration: none;
@@ -154,9 +152,24 @@
   }
 }
 
-
 .page-id-107 {
   p {
     font-size: 1rem;
+  }
+}
+
+.archive {
+  .post {
+    .entry-content {
+      font-size: 1rem;
+    }
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+
+.error404,
+.search {
+  button {
+    border: none;
   }
 }

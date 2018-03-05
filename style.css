@@ -818,3 +818,12 @@ object {
 
 .page-id-107 p {
   font-size: 1rem; }
+
+.archive .post {
+  border-bottom: 1px solid #FFFFFF; }
+  .archive .post .entry-content {
+    font-size: 1rem; }
+
+.error404 button,
+.search button {
+  border: none; }
