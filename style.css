@@ -752,6 +752,9 @@ object {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.quotes-submit-wrapper a {
+  text-decoration: none; }
+
 /* Archives */
 .browse-archives .quote-authors {
   display: -webkit-box;
@@ -813,5 +816,5 @@ object {
     .wp-tag-cloud li a {
       text-decoration: none; }
 
-.quotes-submit-wrapper a {
-  text-decoration: none; }
+.page-id-107 p {
+  font-size: 1rem; }
