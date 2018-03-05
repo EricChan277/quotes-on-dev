@@ -27,27 +27,18 @@
               var quoteUrl = data[0]._qod_quote_source_url;
               // var template = '';
   
-              if(quoteUrl > 0){
-                template += '<div class="entry-content"></div>';
-              } else {
-  
-              }
-  
-              
-              
+          
               $(".entry-content").empty();
               $(".entry-content").append(data[0].content.rendered);
               $(".entry-title").empty();
               $(".entry-title").append(data[0].title.rendered);
-  
-  
-  
-             // article append template variable
-  
               $(".source").empty();
-              $(".source").append("," + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
-  
- 
+              $(".source").append('<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+
+              let home_url= api_vars.home_url + "/" + post[0].slug;
+              history.pushState(null,null,home_url);
+
+
   
     }).fail(function(){
       console.log('nope');
